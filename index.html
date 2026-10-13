@@ -2,46 +2,305 @@
 <html lang="id">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Portfolio Irwan Wafi, Informatics student and developer.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio Irwan Wafi, Informatics student and developer specializing in software, data, and hardware.">
+  <meta name="author" content="Irwan Wafi">
   <meta property="og:title" content="Irwan Wafi — Developer Portfolio">
-  <meta property="og:description" content="Selected projects and experiments by Irwan Wafi.">
+  <meta property="og:description" content="Selected projects, experiments, and technical engineering by Irwan Wafi.">
+  <meta property="og:type" content="website">
   <meta name="theme-color" content="#0a0d14">
   <title>Irwan Wafi — Developer Portfolio</title>
+
+  <!-- Preconnect to external resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://api.github.com">
+
+  <!-- Core Stylesheets -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/project-gallery.css">
   <link rel="stylesheet" href="css/project-explorer.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="css/explorer-mobile-fix.css">
-  <link rel="stylesheet" href="css/project-pagination.css">
-  <script defer src="js/main.js"></script>
+
+  <!-- Primary Application Script (ES Module) -->
+  <script type="module" src="js/main.js"></script>
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
-  <header><nav class="nav shell" aria-label="Primary navigation">
-    <a class="brand" href="#home"><b>IW</b> Irwan Wafi</a>
-    <button class="menu" aria-label="Open menu" aria-expanded="false" aria-controls="links">☰</button>
-    <div id="links" class="links"><a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#achievements">Highlights</a><a href="#contact">Contact</a></div>
-    <a class="gh" href="https://github.com/iarchonn" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-  </nav></header>
+  <!-- Accessibility Skip Link -->
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <!-- Header & Navigation Bar -->
+  <header>
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="#home">
+        <b>IW</b>
+        <span>Irwan Wafi</span>
+      </a>
+
+      <button class="menu" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="links">
+        ☰
+      </button>
+
+      <div id="links" class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Highlights</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <a class="gh" href="https://github.com/iarchonn" target="_blank" rel="noopener noreferrer">
+        GitHub ↗
+      </a>
+    </nav>
+  </header>
+
   <main id="main">
-    <section class="hero" id="home"><div class="shell hero-grid">
-      <div class="reveal"><p class="kicker">● INFORMATICS STUDENT · DEVELOPER</p><h1>I build practical<br><em>digital ideas.</em></h1><p class="lead">I’m Irwan Wafi, an Informatics student exploring software development, data, artificial intelligence, and connected hardware through projects that solve real problems.</p><p class="actions"><a class="button primary" href="#projects">Explore projects ↓</a><a class="button" href="https://github.com/iarchonn" target="_blank" rel="noopener noreferrer">View GitHub ↗</a></p></div>
-      <div class="code reveal" role="img" aria-label="A code introduction"><div class="dots">● ● ● <small>irwan.js</small></div><pre><b>const</b> developer = {
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="shell hero-grid">
+        <div class="reveal">
+          <p class="kicker">● INFORMATICS STUDENT · DEVELOPER</p>
+          <h1>I build practical<br><em>digital ideas.</em></h1>
+          <p class="lead">
+            I’m Irwan Wafi, an Informatics student exploring software development, data analytics, artificial intelligence, and connected hardware through projects that solve real problems.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="#projects">Explore projects ↓</a>
+            <a class="button" href="https://github.com/iarchonn" target="_blank" rel="noopener noreferrer">View GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="code reveal" role="img" aria-label="Code introduction editor">
+          <div class="dots">
+            <span>●</span><span>●</span><span>●</span>
+            <small>irwan.js</small>
+          </div>
+          <pre><b>const</b> developer = {
   name: <strong>"Irwan Wafi"</strong>,
-  focus: <strong>"building & learning"</strong>,
-  interests: [<mark>"software"</mark>, <mark>"data"</mark>,
-              <mark>"AI"</mark>, <mark>"IoT"</mark>],
-  status: <strong>"curious"</strong>
-};</pre></div>
-    </div></section>
-    <section id="about"><div class="shell"><div class="intro reveal"><p class="kicker">01 / ABOUT</p><h2>A builder in progress.</h2><p>I enjoy turning a question into something useful: learning the tools, testing ideas, and refining the result.</p></div><div class="about reveal"><article class="identity"><b>IW</b><h3>Irwan Wafi</h3><p>Informatics Student & Developer</p><a href="https://github.com/iarchonn" target="_blank" rel="noopener noreferrer">github.com/iarchonn ↗</a></article><article class="copy"><p>My learning journey is driven by curiosity about technology and the craft of programming. I’m especially interested in building practical digital solutions—not just writing code in isolation.</p><p>I keep developing through hands-on projects across web development, data, artificial intelligence, and hardware. Each project is a chance to sharpen my problem-solving mindset and learn something new.</p><ul><li><b>01</b> Learn by building</li><li><b>02</b> Solve with intent</li><li><b>03</b> Keep improving</li></ul></article></div></div></section>
-    <section id="skills" class="shade"><div class="shell"><div class="intro reveal"><p class="kicker">02 / SKILLS</p><h2>Tools in my toolkit.</h2><p>A growing stack shaped by the projects and experiments I build.</p></div><div class="skills reveal"><article><h3>Programming</h3><p>C++ · Python · JavaScript</p></article><article><h3>Frontend</h3><p>HTML · CSS · JavaScript · React</p></article><article><h3>Data & AI</h3><p>Streamlit · REST APIs · AI / LLM</p></article><article><h3>Hardware & tools</h3><p>Arduino · MPU-6050 · Git & GitHub</p></article></div></div></section>
-    <section id="projects"><div class="shell"><div class="intro reveal"><p class="kicker">03 / PROJECTS</p><h2>Project explorer.</h2><p>Choose a project from the sidebar to read its overview, key focus, and available links.</p></div><div class="project-explorer reveal"><aside class="project-sidebar" aria-label="Project list"><div class="project-sidebar-top"><span>PROJECTS</span><span id="project-count">0</span></div><label class="project-search"><span class="sr-only">Search projects</span><input id="search" type="search" placeholder="Find a project…" autocomplete="off"></label><label class="mobile-project-select"><span>Select project</span><select id="project-select" aria-label="Select a project"></select></label><div id="project-list" class="project-list" role="listbox" aria-label="Available projects"></div><p id="status" class="status" aria-live="polite">Loading selected projects…</p></aside><article id="project-display" class="project-display" aria-live="polite"></article><nav class="project-pagination" aria-label="Project navigation"><button id="previous-project" type="button">← Previous</button><span id="project-position" aria-live="polite"></span><button id="next-project" type="button">Next →</button></nav></div></div></section>
-    <section id="achievements"><div class="shell"><div class="intro reveal"><p class="kicker">04 / HIGHLIGHTS</p><h2>Learning through making.</h2><p>Selected areas of exploration from the portfolio.</p></div><div class="highlights reveal"><article><b>01</b><h3>Connected hardware</h3><p>Experimenting with sensors and Arduino to bring a safety-focused prototype to life.</p></article><article><b>02</b><h3>Applied AI</h3><p>Exploring conversational assistance for a practical scholarship-information use case.</p></article><article><b>03</b><h3>Data storytelling</h3><p>Using interactive dashboards to make data easier to explore and understand.</p></article></div></div></section>
-    <section id="contact"><div class="shell contact reveal"><p class="kicker">05 / CONTACT</p><h2>Have an idea worth building?</h2><p>The best place to see my latest public work is GitHub.</p><a class="button primary" href="https://github.com/iarchonn" target="_blank" rel="noopener noreferrer">Visit my GitHub ↗</a></div></section>
+  focus: <strong>"building &amp; learning"</strong>,
+  interests: [
+    <mark>"software engineering"</mark>,
+    <mark>"data &amp; analytics"</mark>,
+    <mark>"artificial intelligence"</mark>,
+    <mark>"IoT &amp; hardware"</mark>
+  ],
+  status: <strong>"curious &amp; shipping"</strong>
+};</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="shell">
+        <div class="intro reveal">
+          <p class="kicker">01 / ABOUT</p>
+          <h2>A builder in progress.</h2>
+          <p>Turning practical questions into working software: mastering tools, testing ideas, and refining the user experience.</p>
+        </div>
+
+        <div class="about reveal">
+          <article class="identity">
+            <b>IW</b>
+            <h3>Irwan Wafi</h3>
+            <p>Informatics Student &amp; Developer</p>
+            <a href="https://github.com/iarchonn" target="_blank" rel="noopener noreferrer">github.com/iarchonn ↗</a>
+          </article>
+
+          <article class="copy">
+            <p>
+              My learning journey is driven by curiosity about technology and the craft of engineering. I’m especially passionate about building practical digital solutions that bring measurable utility—not just writing isolated code.
+            </p>
+            <p>
+              I continually evolve through hands-on projects across web development, data analysis, AI integration, and embedded hardware. Every project is an opportunity to strengthen algorithmic thinking and create intuitive experiences.
+            </p>
+            <ul>
+              <li><b>01</b> Learn by building</li>
+              <li><b>02</b> Solve with intent</li>
+              <li><b>03</b> Keep improving</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="shade">
+      <div class="shell">
+        <div class="intro reveal">
+          <p class="kicker">02 / SKILLS</p>
+          <h2>Tools in my toolkit.</h2>
+          <p>A focused technical stack shaped by real-world applications, experiments, and active prototyping.</p>
+        </div>
+
+        <div class="skills reveal">
+          <article>
+            <h3>Programming</h3>
+            <p>C++ · Python · JavaScript (ES6+) · SQL</p>
+          </article>
+          <article>
+            <h3>Frontend &amp; Web</h3>
+            <p>HTML5 · CSS3 · React · Responsive Design</p>
+          </article>
+          <article>
+            <h3>Data &amp; AI</h3>
+            <p>Streamlit · Pandas · REST APIs · LLM Prompting</p>
+          </article>
+          <article>
+            <h3>Hardware &amp; Tools</h3>
+            <p>Arduino · MPU-6050 · Git &amp; GitHub · Google Apps Script</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="shell">
+        <div class="intro reveal">
+          <p class="kicker">03 / PROJECTS</p>
+          <h2>Featured projects &amp; gallery.</h2>
+          <p>Explore project screenshots and visual previews, or switch to the interactive explorer for full README documentation.</p>
+        </div>
+
+        <!-- Gallery Controls Bar -->
+        <div class="gallery-controls-bar reveal">
+          <div id="category-filters" class="category-filters" role="tablist" aria-label="Filter projects by category">
+            <!-- Filter pills dynamically generated -->
+          </div>
+
+          <div class="gallery-search-box">
+            <span class="gallery-search-icon" aria-hidden="true">🔍</span>
+            <input
+              id="project-search-input"
+              type="search"
+              placeholder="Filter by title, tag, or technology…"
+              aria-label="Filter projects"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+
+        <!-- Status & Counter Bar -->
+        <div class="gallery-status-bar reveal">
+          <span id="gallery-status">Loaded projects from local portfolio archive.</span>
+          <span id="project-count-badge" class="project-count-badge">6 projects</span>
+        </div>
+
+        <!-- Gallery View Grid -->
+        <div id="project-gallery" class="project-gallery reveal" aria-live="polite">
+          <!-- Gallery cards dynamically rendered with photos from assets/images -->
+        </div>
+
+        <!-- Detailed Project Explorer (Hidden by default, shown upon clicking card) -->
+        <div id="project-explorer" class="project-explorer reveal" hidden>
+          <aside class="project-sidebar" aria-label="Project selection sidebar">
+            <button id="back-to-gallery" class="back-to-gallery" type="button">
+              ← Back to visual gallery
+            </button>
+
+            <div class="project-sidebar-top">
+              <span>EXPLORER</span>
+              <span id="project-count">Repositories</span>
+            </div>
+
+            <label class="project-search">
+              <span class="sr-only">Search projects</span>
+              <input id="search" type="search" placeholder="Find project in reader…" autocomplete="off">
+            </label>
+
+            <label class="mobile-project-select">
+              <span>Select project</span>
+              <select id="project-select" aria-label="Select a project"></select>
+            </label>
+
+            <div id="project-list" class="project-list" role="listbox" aria-label="Available projects">
+              <!-- Sidebar project items -->
+            </div>
+
+            <p id="status" class="status" aria-live="polite"></p>
+          </aside>
+
+          <!-- Detailed Reader Display -->
+          <article id="project-display" class="project-display" aria-live="polite">
+            <!-- Reader content rendered dynamically -->
+          </article>
+
+          <!-- Mobile Pagination Bar -->
+          <nav class="project-pagination" aria-label="Project navigation">
+            <button id="previous-project" type="button">← Previous</button>
+            <span id="project-position" aria-live="polite"></span>
+            <button id="next-project" type="button">Next →</button>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section id="achievements">
+      <div class="shell">
+        <div class="intro reveal">
+          <p class="kicker">04 / HIGHLIGHTS</p>
+          <h2>Engineering through making.</h2>
+          <p>Key highlights and core technical explorations across hardware, data, and web engineering.</p>
+        </div>
+
+        <div class="highlights reveal">
+          <article>
+            <b>01</b>
+            <h3>Connected Hardware</h3>
+            <p>Prototyping safety solutions with Arduino, accelerometer/gyroscope sensors, and real-time auditory alert triggers.</p>
+          </article>
+          <article>
+            <b>02</b>
+            <h3>Applied Data &amp; AI</h3>
+            <p>Building analytics dashboards and conversational interfaces that transform raw metrics into actionable insight.</p>
+          </article>
+          <article>
+            <b>03</b>
+            <h3>Modern Web Engineering</h3>
+            <p>Crafting responsive, performant user interfaces with clean vanilla architecture, REST integration, and zero framework bloat.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="shell contact reveal">
+        <p class="kicker">05 / CONTACT</p>
+        <h2>Have an idea worth building?</h2>
+        <p>I’m always open to discussing collaborative projects, tech explorations, and new developer opportunities.</p>
+        <a class="button primary" href="https://github.com/iarchonn" target="_blank" rel="noopener noreferrer">
+          Visit my GitHub Profile ↗
+        </a>
+      </div>
+    </section>
   </main>
-  <footer><div class="shell foot"><a class="brand" href="#home"><b>IW</b> Irwan Wafi</a><p>© <span id="year"></span> Built with curiosity.</p><a href="#home">Back to top ↑</a></div></footer>
-  <dialog id="modal"><button id="close" aria-label="Close project details">×</button><div id="modal-content"></div></dialog>
+
+  <!-- Footer -->
+  <footer>
+    <div class="shell foot">
+      <a class="brand" href="#home">
+        <b>IW</b>
+        <span>Irwan Wafi</span>
+      </a>
+      <p>© <span id="year">2026</span> Irwan Wafi. Built with curiosity &amp; precision.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for High-Resolution Screenshot Previews -->
+  <div id="image-lightbox" class="image-lightbox" role="dialog" aria-modal="true" aria-label="High-Resolution Project Preview">
+    <div class="lightbox-dialog">
+      <button id="lightbox-close" class="lightbox-close-btn" aria-label="Close image preview">×</button>
+      <div class="lightbox-img-wrapper">
+        <img id="lightbox-image" src="" alt="Project screenshot preview">
+      </div>
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+    </div>
+  </div>
 </body>
 </html>

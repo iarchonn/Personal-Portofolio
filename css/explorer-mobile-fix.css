@@ -1,17 +1,1 @@
-/* Prevent the project reader from overflowing on narrow viewports. */
-.project-explorer,.project-sidebar,.project-display,.display-grid,.display-grid>*,.project-row{min-width:0}
-.display-title,.display-summary,.project-row-name{overflow-wrap:anywhere}
-@media(max-width:800px){
-  .project-explorer{display:block;width:100%;min-height:0;overflow:hidden}
-  .project-sidebar{width:100%;border-right:0;border-bottom:1px solid var(--line)}
-  .project-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible;max-width:100%;scroll-snap-type:none}
-  .project-row{width:100%;min-width:0;min-height:88px;white-space:normal;overflow:hidden}
-  .project-row-name{font-size:12px;line-height:1.35}
-  .project-display{width:100%;min-height:0;overflow:hidden}
-  .display-title{max-width:100%;font-size:clamp(2rem,10vw,3.25rem);line-height:1.02;letter-spacing:-.06em;white-space:normal;word-break:normal}
-  .display-summary{max-width:100%;overflow-wrap:anywhere}
-  .display-grid{grid-template-columns:1fr;gap:22px;min-width:0}
-}
-@media(max-width:390px){
-  .project-list{grid-template-columns:1fr}.project-row{min-height:64px}.project-display{padding:26px 17px}.display-title{font-size:2rem}
-}
+/* Consolidated into css/project-explorer.css and css/responsive.css */
